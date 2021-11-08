@@ -1,0 +1,16 @@
+body{
+    background-image: url(background_lol.jpg);
+}
+#camera{
+    border:2px dashed brown;
+    width: 350px;
+    height: 300px;
+}
+span{
+    background-color: pink;
+    color: darkgreen;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
