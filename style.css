@@ -1,5 +1,5 @@
 body{
-    background-image: url(background_lol.jpg);
+    background-color: aquamarine;
 }
 #camera{
     border:2px dashed brown;
@@ -9,8 +9,4 @@ body{
 span{
     background-color: pink;
     color: darkgreen;
-}
-.icon{
-    height: 50px;
-    width: 50px;
 }

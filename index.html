@@ -1,7 +1,7 @@
  
 <html>
   <head>
-    <title>Nuclear</title>
+    <title>Face Recognition App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,12 +18,24 @@
   <div class="container">
     
     <center>
-<span><img src="nuclear-icon.png" class="icon"></span><h1 class="btn btn-danger " style="font-size: 30px;">Nuclear Lab</h3><img src="nuclear-icon.png" class="icon">
+<h3 class="btn btn-default addheading" style="font-size: 30px;">Image Recognition</h3>
       <br><br>
 
-      <p style="font-size: 22px;">Facial Recognition-Defence 1</p>
-      <button class="btn btn-info" onclick="takesnapshot()">Scan</button>
-<label id="result_name"></label>
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+<b class="name_of_objects">
+Me
+  <hr>
+  Cat
+  <hr>
+phone
+<hr>
+pillow
+<hr>
+Book
+<hr>
+</b>
+      <label>Webcam View - </label>
+
       <br><br>
       <div id="camera"></div>
 
@@ -32,7 +44,10 @@
       <br><br>
 
       <br><br>
-
+<button class="btn btn-success" onclick="takesnapshot();">Take Snapshot</button>
+<button class="btn btn-danger" onclick="find();">Check Image</button>
+      <p style="font-size: 22px;">Object :  <span id="result_name"></span></p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_accuracy"></span>  </p>
     </center>
 
   </div>
